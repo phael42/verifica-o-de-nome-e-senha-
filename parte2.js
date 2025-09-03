@@ -16,6 +16,7 @@ function verificarLogin() {
     ) {
       encontrado = true;
       mensagem.innerHTML = "Login bem sucedido ," + usuarios[i].usuario + "!";
+      window.location.href=""
     }
   }
 
@@ -25,7 +26,7 @@ function verificarLogin() {
     mensagem.innerHTML = "Login ou senha incorretos, por favor tente novamente";
     mensagem.innerHTML = "Login bem sucedido";
     titulo.innerHTML = "Pagina de login";
-  }, 6000);
+  }, 2000);
 
   document.getElementById("usuario").value = "";
     document.getElementById("senha").value = "";
@@ -33,4 +34,4 @@ function verificarLogin() {
 
   }
 }
- 
+
